@@ -3,13 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+}
+
 body {
-    background-color: black;
+    background-color: #FFF;
     font-family: 'Roboto Slab', serif;
 }
 
+/* MENÙ */
+nav {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 999;
+}
 
+nav > ul {
+    list-style-type: none;
+}
 
+nav > ul > li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    padding: 8px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+    box-shadow: 0 3px 5px #808080;
+}
 
 /* SEZIONI SCARPE */
 div {
@@ -17,6 +52,7 @@ div {
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    scroll-snap-align: start;
 }
 
 
